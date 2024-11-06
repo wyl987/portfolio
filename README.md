@@ -1,7 +1,7 @@
 # portfolio
 
 ## Description
-This is a personal portfolio website created using HTML, CSS, and JavaScript. The website showcases my projects, skills, and experiences as a web developer. 
+This is a personal portfolio website created using HTML, CSS, and JavaScript. The website showcases my projects, skills, and experiences as a software developer. 
 
 ## Features
 - Responsive design for mobile and desktop
