@@ -20,13 +20,13 @@ You can view the live demo of the portfolio website [here].
 To view this project locally:
 1. Clone this repository:
     ```bash
-    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/wyl987/portfolio.git)
+    git clone https://github.com/wyl987/portfolio.git
     ```
 2. Open the `index.html` file in your web browser.
 
 ## Reference
 This project was built with the help of a tutorial on YouTube:
-- [Modern Responsive Portfolio Website with HTML & CSS & JavaScript]([https://www.youtube.com/watch?v=video-link](https://www.youtube.com/watch?v=NWZQkwXtHJo))
+- [Modern Responsive Portfolio Website with HTML & CSS & JavaScript](https://www.youtube.com/watch?v=NWZQkwXtHJo)
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
