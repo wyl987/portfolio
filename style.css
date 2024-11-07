@@ -28,8 +28,6 @@ header{
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  /* width: min(60%, 60rem);
-  margin: 0 auto; */
   background-color: rgba(112,128,144,1);
   backdrop-filter: blur(8px);
   color: white;
@@ -141,15 +139,14 @@ section{
   opacity: 0.8;
 }
 .name h1{
-  font-size: 4rem;
+  font-size: min(5vw, 4rem);
   font-weight: 600;
-  text-wrap: nowrap;
 }
 .name span{
   background:linear-gradient(to right, rgb(112,128,144), rgb(255,160,122));
   background-clip: text;
   color: transparent;
-  font-size: 2rem;
+  font-size: min(3vw, 2rem);
 }
 .btn-container{
   gap: 1rem;
@@ -186,7 +183,7 @@ section{
 }
 .section-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: min(4rem, 8vw);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -195,17 +192,11 @@ section{
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 90%;
+  width: max(400px, 90%);
   border: 2px solid rgb(112,128,144);
   border-radius: 3rem;
   padding: 3rem;
 }
-/* .education-card{
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  border: 1px solid;
-} */
 .university-info {
   width: 100%; 
   justify-content: space-between; 
@@ -213,8 +204,10 @@ section{
   gap: 2rem;
 }
 .university-info .img-container {
-  width: max(20vw, 15rem);
-  height: max(8vw, 5rem);
+  width: min(30vw, 15rem);
+  min-width: 10rem;
+  height: min(15vw, 5rem);
+  min-height: 5rem;
   overflow: hidden;
 }
 .university-info .img-container img {
@@ -227,7 +220,6 @@ section{
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  text-wrap: nowrap;
 }
 .university-info-text p{
   font-size: 1.5rem;
@@ -281,11 +273,13 @@ section{
   font-weight: 500;
 }
 .skills-container{
-  width: 90%;
+  width: max(400px, 90%);
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
 }
 .skills-container .icon-container{
   width: 100%;
@@ -331,4 +325,82 @@ footer ul li a{
 }
 .copyright{
   font-size: 300;
+}
+
+/* @media(max-width:1280px){
+  header{
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .profile-container {
+    gap: 3rem;
+  }
+} */
+
+@media(max-width:768px){
+  header{
+    gap: 2rem;
+    padding: 1rem 1rem;
+  }
+  header .logo span{
+    font-size: 1rem;
+  }
+  header .git-btn {
+    display: none;
+  }
+  .profile-container {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+  .profile-container .img-container {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media(max-width:600px){
+  header{
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    width: 60%;
+    gap:0;
+  }
+  header .logo span{
+    font-size: 1.5rem;
+  }
+  header #hambuger-icon{
+    display: block;
+    margin-left: auto;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(112,128,144, 0.95);
+    border-radius: 3rem;
+    display: none;
+  }
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .nav-links li a{
+    font-size: 1.2rem;
+  }
+  .nav-links.active{
+    display: block;
+  }
+  .profile-container {
+    gap: 0.5rem;
+  }
+  .skills-container .icon-container i{
+    font-size: 3rem;
+  }
 }
