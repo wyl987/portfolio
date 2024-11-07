@@ -14,7 +14,7 @@ This is a personal portfolio website created using HTML, CSS, and JavaScript. Th
 - JavaScript
 
 ## Demo
-You can view the live demo of the portfolio website [here].
+You can view the live demo of the portfolio website [here](https://wyl987.github.io/portfolio/).
 
 ## Installation
 To view this project locally:
