@@ -413,6 +413,8 @@ footer ul li a{
   .profile-container .img-container{
     width: 80vw;
     height: 80vw;
-
+  }
+  footer ul{
+    gap: 2rem;
   }
 }
