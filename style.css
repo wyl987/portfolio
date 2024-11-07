@@ -258,7 +258,7 @@ section{
   transform: translateY(-10px)scale(1.02);
 }
 .project-card img{
-  width: 35vw;
+  width: min(350px, 35vw);
   aspect-ratio: 16 / 8;
   border-radius: 1rem;
 }
