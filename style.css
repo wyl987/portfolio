@@ -154,6 +154,10 @@ section{
 .btn-container{
   gap: 1rem;
 }
+.btn-container a{
+  color: black;
+  text-decoration: none;
+}
 .btn{
   border: 2px solid rgb(112,128,144);
   border-radius: 3rem;
