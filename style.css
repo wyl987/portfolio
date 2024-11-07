@@ -101,6 +101,10 @@ section{
   width: 100%;
   padding: 8rem 12%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
 }
 
 .profile{
@@ -270,12 +274,6 @@ section{
 .project-card p:nth-of-type(2){
   font-size: 1.1rem;
   font-weight: 500;
-}
-.skills{
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
 }
 .skills-container{
   width: max(350px, 90%);
