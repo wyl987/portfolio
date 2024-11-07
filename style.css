@@ -211,10 +211,9 @@ section{
   gap: 2rem;
 }
 .university-info .img-container {
-  width: min(30vw, 15rem);
-  min-width: 10rem;
-  height: min(15vw, 5rem);
-  min-height: 5rem;
+  width: min(25vw, 15rem);
+  min-width: 12rem;
+  aspect-ratio: 16 / 6;
   overflow: hidden;
 }
 .university-info .img-container img {
@@ -413,6 +412,14 @@ footer ul li a{
   .profile-container .img-container{
     width: 80vw;
     height: 80vw;
+  }
+  .university-info{
+    flex-direction: column-reverse;
+    align-items: stretch; 
+    gap: 0;
+  }
+  .university-info .img-container{
+    width: 35vw;
   }
   footer ul{
     gap: 2rem;
