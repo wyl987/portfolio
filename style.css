@@ -413,6 +413,9 @@ footer ul li a{
     width: 80vw;
     height: 80vw;
   }
+  .education-content {
+    border: none;
+  }
   .university-info{
     flex-direction: column-reverse;
     align-items: stretch; 
