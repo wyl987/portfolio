@@ -1,8 +1,8 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
@@ -13,22 +13,26 @@
   display: flex;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
 }
-::-webkit-scrollbar-track{
-  background-color:rgb(219, 219, 219);
+::-webkit-scrollbar-track {
+  background-color: rgb(219, 219, 219);
 }
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(to bottom, rgb(112,128,144), rgb(255,160,122))
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgb(112, 128, 144),
+    rgb(255, 160, 122)
+  );
 }
 
-header{
+header {
   position: fixed;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(112,128,144,1);
+  background-color: rgba(112, 128, 144, 1);
   backdrop-filter: blur(8px);
   color: white;
   align-items: center;
@@ -36,7 +40,7 @@ header{
   gap: 3rem;
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
-  z-index:1000;
+  z-index: 1000;
 }
 
 .logo {
@@ -48,66 +52,66 @@ header{
 .logo span {
   font-size: 1.3rem;
 }
-.logo:hover{
+.logo:hover {
   transform: scale(1.15);
 }
-.nav-links{
+.nav-links {
   gap: 2rem;
 }
-li a{
+li a {
   position: relative;
   color: white;
   font-size: 1rem;
-  font-weight:300;
+  font-weight: 300;
 }
-li a::before{
+li a::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 0;
   left: 0;
   height: 4px;
   top: 1.3rem;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(246,195,175), rgb(255,160,122));
+  background: linear-gradient(to right, rgb(246, 195, 175), rgb(255, 160, 122));
 }
 
 li a:hover::before {
   width: 100%;
 }
-.git-btn{
+.git-btn {
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   border: none;
-  font-weight:500;
+  font-weight: 500;
   font-size: 1rem;
   color: white;
   cursor: pointer;
   text-wrap: nowrap;
   transiton: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(246,195,175), rgb(255,160,122));
+  background: linear-gradient(to right, rgb(246, 195, 175), rgb(255, 160, 122));
 }
 .git-btn:hover {
-  background: linear-gradient(to right, rgb(255,160,122), rgb(246,195,175));
+  background: linear-gradient(to right, rgb(255, 160, 122), rgb(246, 195, 175));
   transform: scale(1.03);
 }
-#hambuger-icon{
+#hambuger-icon {
   font-size: 2rem;
   display: none;
 }
 
-section{
+section {
   min-height: 100vh;
   width: 100%;
   padding: 8rem 12%;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
-.profile{
+.profile {
   align-items: center;
   justify-content: center;
 }
@@ -129,37 +133,37 @@ section{
   object-fit: cover;
   object-position: 50% 30%;
 }
-.profile-content{
+.profile-content {
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
-.name h3{
+.name h3 {
   font-size: 1.8rem;
   font-weight: 500;
   opacity: 0.8;
 }
-.name h1{
+.name h1 {
   font-size: min(8vw, 4rem);
   font-weight: 600;
 }
-.name span{
-  background:linear-gradient(to right, rgb(112,128,144), rgb(255,160,122));
+.name span {
+  background: linear-gradient(to right, rgb(112, 128, 144), rgb(255, 160, 122));
   background-clip: text;
   color: transparent;
   font-size: min(5vw, 2rem);
 }
-.btn-container{
+.btn-container {
   gap: 1rem;
 }
-.btn-container a{
+.btn-container a {
   color: black;
   text-decoration: none;
 }
-.btn{
-  border: 2px solid rgb(112,128,144);
+.btn {
+  border: 2px solid rgb(112, 128, 144);
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
   text-wrap: nowrap;
@@ -167,25 +171,27 @@ section{
   font-weight: 500;
   transition: 0.2s ease-in-out;
 }
-.btn:hover{
-  background: rgb(112,128,144);
+.btn:hover {
+  background: rgb(112, 128, 144);
   color: white;
 }
-.socials{
+.socials {
   gap: 2rem;
 }
 .socials a {
   text-decoration: none;
 }
-.socials a:visited, .socials a:hover, .socials a:active {
-  color: inherit; 
+.socials a:visited,
+.socials a:hover,
+.socials a:active {
+  color: inherit;
 }
-.socials i{
+.socials i {
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.socials i:hover{
+.socials i:hover {
   transform: scale(1.1);
 }
 .section-title {
@@ -194,19 +200,19 @@ section{
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.education-content{
+.education-content {
   margin: 0 auto;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   /* width: max(350px, 90%); */
-  border: 2px solid rgb(112,128,144);
+  border: 2px solid rgb(112, 128, 144);
   border-radius: 3rem;
   padding: 3rem;
 }
 .university-info {
-  width: 100%; 
-  justify-content: space-between; 
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
@@ -227,18 +233,18 @@ section{
   align-items: start;
   justify-content: center;
 }
-.university-info-text p{
+.university-info-text p {
   font-size: 1.5rem;
-  background:linear-gradient(to right, rgb(112,128,144), rgb(255,160,122)); 
+  background: linear-gradient(to right, rgb(112, 128, 144), rgb(255, 160, 122));
   background-clip: text;
   color: transparent;
 }
-.project-grid{
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-.project-card{
+.project-card {
   padding: 3rem 2rem;
   flex-direction: column;
   align-items: center;
@@ -246,39 +252,39 @@ section{
   justify-content: space-between;
   text-align: center;
   gap: 1.5rem;
-  border: 2px solid rgb(112,128,144);
+  border: 2px solid rgb(112, 128, 144);
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.project-card:hover{
-  background-color: rgb(112,128,144);
+.project-card:hover {
+  background-color: rgb(112, 128, 144);
   color: white;
-  transform: translateY(-10px)scale(1.02);
+  transform: translateY(-10px) scale(1.02);
 }
-.project-card img{
+.project-card img {
   width: min(350px, 35vw);
   aspect-ratio: 16 / 8;
   border-radius: 1rem;
 }
-.project-card:hover .btn{
+.project-card:hover .btn {
   border: 2px solid white;
   color: white;
 }
-.project-card:hover .btn:hover{
+.project-card:hover .btn:hover {
   border: 2px solid white;
   background-color: white;
   color: black;
 }
-.project-card h3{
+.project-card h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.project-card p:nth-of-type(2){
+.project-card p:nth-of-type(2) {
   font-size: 1.1rem;
   font-weight: 500;
 }
-.skills-container{
+.skills-container {
   /* width: max(350px, 90%); */
   margin: 0 auto;
   flex-direction: column;
@@ -287,32 +293,32 @@ section{
   text-align: center;
   gap: 1.5rem;
 }
-.skills-container .icon-container{
+.skills-container .icon-container {
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.skills-container .icon-container i{
+.skills-container .icon-container i {
   font-size: 4rem;
   transition: 0.2s ease-in-out;
 }
-.skills-container .icon-container i:hover{
+.skills-container .icon-container i:hover {
   transform: scale(1.3);
-  color: rgb(255,160,122);
+  color: rgb(255, 160, 122);
 }
-.skills-container p{
+.skills-container p {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.skills-container span{
+.skills-container span {
   font-size: 1.2rem;
 }
-.skills-container span i{
+.skills-container span i {
   font-size: 1.2rem;
-  color: rgb(255,160,122);
+  color: rgb(255, 160, 122);
 }
-footer{
-  bottom:0;
+footer {
+  bottom: 0;
   left: 0;
   height: 10rem;
   width: 100%;
@@ -321,25 +327,24 @@ footer{
   justify-content: center;
   align-items: center;
 }
-footer ul{
+footer ul {
   align-item: center;
   gap: 3rem;
 }
-footer ul li a{
+footer ul li a {
   color: black;
   font-weight: 600;
 }
-.copyright{
+.copyright {
   font-size: 300;
 }
 
-
-@media(max-width:768px){
-  header{
+@media (max-width: 768px) {
+  header {
     gap: 2rem;
     padding: 1rem 1rem;
   }
-  header .logo span{
+  header .logo span {
     font-size: 1rem;
   }
   header .git-btn {
@@ -355,24 +360,24 @@ footer ul li a{
   }
 }
 
-@media(max-width:600px){
-  header{
+@media (max-width: 600px) {
+  header {
     justify-content: space-between;
     padding: 1rem 3rem;
     width: 60%;
-    gap:0;
+    gap: 0;
   }
-  header .logo span{
+  header .logo span {
     font-size: 1.5rem;
   }
-  header #hambuger-icon{
+  header #hambuger-icon {
     display: block;
     margin-left: auto;
   }
   .nav-links {
     position: absolute;
     top: 100%;
-    left: 0; 
+    left: 0;
     margin-top: 1rem;
     width: 100%;
     padding: 1rem;
@@ -380,7 +385,7 @@ footer ul li a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgba(112,128,144, 0.95);
+    background: rgba(112, 128, 144, 0.95);
     border-radius: 3rem;
     display: none;
   }
@@ -388,43 +393,43 @@ footer ul li a{
     margin-top: 1.5rem;
     padding: 1rem;
   }
-  .nav-links li a{
+  .nav-links li a {
     font-size: 1.2rem;
   }
-  .nav-links.active{
+  .nav-links.active {
     display: block;
   }
   .profile-container {
     gap: 0.5rem;
   }
-  .skills-container .icon-container i{
+  .skills-container .icon-container i {
     font-size: 3rem;
   }
 }
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   section {
     padding: 8rem 2%;
   }
-  
+
   header {
     width: 100%;
   }
-  .profile-container .img-container{
+  .profile-container .img-container {
     width: 80vw;
     height: 80vw;
   }
   .education-content {
-    border: none;
+    /* border: none; */
   }
-  .university-info{
+  .university-info {
     flex-direction: column-reverse;
-    align-items: stretch; 
+    align-items: stretch;
     gap: 0;
   }
-  .university-info .img-container{
+  .university-info .img-container {
     width: 35vw;
   }
-  footer ul{
+  footer ul {
     gap: 2rem;
   }
 }
